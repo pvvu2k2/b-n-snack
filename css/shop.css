@@ -1,0 +1,70 @@
+/* CSS chung cho hai trang shop và subscription */
+
+section.shop {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.shop p {
+    margin-bottom: 40px;
+}
+
+section.shop p:nth-child(1) {
+    font-size: 40px;
+    color: var(--text-title-color);
+}
+
+section.shop p:nth-child(2) {
+    font-size: 16px;
+}
+
+section.list-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.list-shop section.item-shop {
+    margin: 10px;
+}
+
+section.list-shop section.item-shop p:nth-child(2) {
+    font-size: 24px;
+    color: var(--text-title-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .list-shop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-shop {
+        width: 50%;
+        /* Mỗi sản phẩm chiếm 50% chiều rộng trên thiết bị di động */
+        padding: 10px;
+        box-sizing: border-box;
+        /* Đảm bảo padding không làm tăng kích thước thực của phần tử */
+    }
+
+    .item-shop a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .item-shop img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item-shop p {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+    }
+
+}

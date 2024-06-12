@@ -1,0 +1,128 @@
+section.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.login img {
+    width: 120%;
+}
+
+section.login section.form form label {
+    font-size: 18px;
+    color: var(--text-title-color);
+}
+
+section.login section.form section {
+    margin-bottom: 20px;
+}
+
+section.login section.form {
+    width: 320px;
+
+}
+
+section.login section.form input[type="email"],
+section.login section.form input[type="password"] {
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+section.login section.form a {
+    color: var(--text-content-color);
+    margin-right: 20px;
+}
+
+section.login section.form section.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.login section.form section.btn a {
+    padding: 10px 16px;
+    background: var(--text-title-color);
+    color: #fff;
+    border-radius: 40px;
+    border: 2px solid var(--text-title-color);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+section.login section.form section.btn a:hover {
+    background: var(--background-color);
+    color: var(--text-title-color);
+    border: 2px solid var(--text-title-color);
+}
+
+@media (max-width: 768px) {
+    section.login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.login img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    section.login section.form {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    section.login section.form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.login section.form form section {
+        margin-bottom: 20px;
+    }
+
+    section.login section.form form label {
+        margin-bottom: 5px;
+    }
+
+    section.login section.form form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    section.login section.form form section:last-child {
+        text-align: end;
+    }
+
+    section.login section.form form section:last-child a {
+        text-decoration: none;
+    }
+
+    section.login section.form form section.btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.login section.form form section.btn a {
+        width: 48%;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 40px;
+    }
+
+    section.login section.form form section.btn a:hover {
+        opacity: 0.8;
+    }
+
+}

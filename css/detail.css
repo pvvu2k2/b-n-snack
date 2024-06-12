@@ -1,0 +1,95 @@
+section.detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.detail section.item-detail p {
+    margin-bottom: 10px;
+}
+
+section.detail section.item-detail p:nth-child(1) {
+    font-size: 32px;
+    color: var(--text-title-color);
+}
+
+section.detail section.item-detail p:nth-child(2) {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+section.detail section.item-detail p:nth-child(3) {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+section.detail section.item-detail input {
+    width: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+section.detail section.item-detail a {
+    font-size: 20px;
+    background: var(--text-title-color);
+    color: #fff;
+    padding: 15px 80px 15px 80px;
+    border-radius: 30px;
+    border: 2px solid var(--text-title-color);
+}
+
+section.detail section.item-detail a:hover {
+    background: #fff;
+    color: var(--text-title-color);
+    border: 2px solid var(--text-title-color);
+}
+
+@media (max-width: 768px) {
+    section.detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.detail img {
+        width: 100%;
+        max-width: 300px;
+        /* Đảm bảo hình ảnh không vượt quá kích thước của phần tử cha */
+        height: auto;
+        /* Chiều cao tự động điều chỉnh để không làm biến dạng hình ảnh */
+        margin-bottom: 20px;
+    }
+
+    section.item-detail {
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    section.item-detail p {
+        margin: 5px 0;
+    }
+
+    section.item-detail input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section.item-detail a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    section.item-detail a:hover {
+        background-color: #0056b3;
+    }
+
+}
