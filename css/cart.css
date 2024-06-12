@@ -1,0 +1,127 @@
+section.cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.cart section.cart-1 section.cart-item {
+    display: flex;
+    align-items: start;
+    border-top: 1px solid var(--text-title-color);
+    border-bottom: 1px solid var(--text-title-color);
+    padding: 22px;
+}
+
+section.cart p:nth-child(1) {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-title-color);
+}
+
+section.cart section.cart-1 section.cart-item input {
+    width: 70px;
+    padding: 10px;
+}
+
+section.cart-item img,
+section.cart-item section,
+section.cart-item input {
+    margin-right: 20px;
+}
+
+section.cart-2 {
+    width: 35%;
+}
+
+section.cart-2 section.cart-item-1 section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section.cart-2 section.cart-item-1 section p:nth-child(1) {
+    font-size: 16px;
+}
+
+section.cart-2 section.cart-item-1 {
+    border-top: 1px solid var(--text-title-color);
+    border-bottom: 1px solid var(--text-title-color);
+}
+
+section.cart-2 section.cart-item-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+section.cart-2 section.cart-item-2 p:nth-child(1) {
+    font-size: 20px;
+}
+
+section.cart button {
+    padding: 10px 30px 10px 30px;
+    background: var(--text-title-color);
+    color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    margin-top: 26px;
+}
+
+section.cart button:hover {
+    background: var(--background-color);
+    color: var(--text-title-color);
+    border: 2px solid var(--text-title-color);
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    section.cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.cart-1,
+    section.cart-2 {
+        width: 100%;
+        max-width: 600px;
+        /* Đảm bảo phần giỏ hàng không quá rộng trên các thiết bị nhỏ */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    section.cart-1 section.cart-item,
+    section.cart-2 section.cart-item-1 {
+        margin-bottom: 10px;
+    }
+
+    section.cart-1 section.cart-item img {
+        width: 80px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    section.cart-1 section.cart-item section {
+        flex: 1;
+    }
+
+    section.cart-1 section.cart-item input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    section.cart-1 section.cart-item p,
+    section.cart-2 section.cart-item-1 p,
+    section.cart-2 section.cart-item-2 p {
+        margin: 0;
+    }
+
+    section.cart-2 button {
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,226 @@
+header {
+    border-bottom: 1px solid var(--text-content-color);
+    border-top: 1px solid var(--text-content-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header .logo i {
+    color: var(--text-title-color);
+    margin-right: 10px;
+}
+
+header .logo p {
+    font-size: 28px;
+    color: var(--text-title-color);
+}
+
+header .nav-menu .nav {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-menu .nav .nav-item {
+    display: inline-block;
+    padding: 20px;
+}
+
+header .nav-menu .nav .nav-item a {
+    color: var(--text-content-color);
+}
+
+header .action {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+header .action .action-login {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+header .action .action-login i {
+    margin-right: 10px;
+}
+
+header .action .action-login p {
+    font-size: 18px;
+}
+
+main section.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+main section.home section.title {
+    margin-top: 100px;
+}
+
+main section.home section.title p:nth-child(1) {
+    font-size: 52px;
+    color: var(--text-title-color);
+    line-height: 70px;
+    margin-bottom: 46px;
+}
+
+main section.home section.title p:nth-child(2) {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+main section.home section.title a {
+    padding: 12px 50px 12px 50px;
+    background: var(--text-title-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 40px;
+}
+
+main section.home section.title a:hover {
+    background: var(--background-color);
+    color: var(--text-content-color);
+    border: 2px solid var(--text-content-color);
+    transition: 0.6s;
+}
+
+
+footer {
+    border-bottom: 1px solid var(--text-content-color);
+    border-top: 1px solid var(--text-content-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    line-height: 36px;
+}
+
+
+footer section.social ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer section.social ul li {
+    margin-right: 16px;
+}
+
+
+@media (min-width: 768px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header {
+        /* flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0; */
+        height: 63px;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header .nav-menu {
+        display: none;
+    }
+
+    header .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid var(--text-content-color);
+    }
+
+    .nav-menu.nav-menu-visible {
+        display: flex;
+    }
+
+    .nav-menu .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu .nav-item a {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--text-content-color);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main section.home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.home section.title {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main section.home section.image img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    footer section {
+        margin-bottom: 20px;
+    }
+
+    footer section.social ul {
+        justify-content: center;
+    }
+}
