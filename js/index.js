@@ -17,24 +17,6 @@ document.getElementById("shop").addEventListener("click", function (event) {
     xhr.send();
 });
 
-document.getElementById("subscription").addEventListener("click", function (event) {
-    event.preventDefault();
-    var navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(function (link) {
-        link.classList.remove("active");
-    });
-    // Thêm lớp active vào phần tử được nhấp
-    this.classList.add("active");
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "../page/subscription.html", true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById("main").innerHTML = xhr.responseText;
-        }
-    };
-    xhr.send();
-});
-
 document.getElementById("about").addEventListener("click", function (event) {
     event.preventDefault();
     var navLinks = document.querySelectorAll(".nav-link");

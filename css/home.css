@@ -45,6 +45,11 @@ header .action {
     font-size: 20px;
 }
 
+header .nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
 header .action .action-login {
     display: flex;
     align-items: center;
@@ -62,7 +67,7 @@ header .action .action-login p {
 main section.home {
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
 }
 
 main section.home section.title {
@@ -118,14 +123,6 @@ footer section.social ul li {
     margin-right: 16px;
 }
 
-
-@media (min-width: 768px) {
-    .nav-toggle {
-        display: none;
-    }
-}
-
-
 /* Mobile styles */
 @media (max-width: 768px) {
     .container {
@@ -153,10 +150,6 @@ footer section.social ul li {
         cursor: pointer;
     }
 
-    .nav-toggle {
-        display: block;
-    }
-
     .nav-menu {
         display: none;
         position: absolute;
@@ -165,7 +158,7 @@ footer section.social ul li {
         width: 100%;
         background-color: var(--background-color);
         flex-direction: column;
-        align-items: center;
+        align-items: end;
         border-top: 1px solid var(--text-content-color);
     }
 
@@ -176,17 +169,19 @@ footer section.social ul li {
     .nav-menu .nav {
         flex-direction: column;
         width: 100%;
+        padding-bottom: 100%;
     }
 
     .nav-menu .nav-item {
         width: 100%;
-        text-align: center;
+        text-align: end;
+        margin-right: 40px;
+
     }
 
     .nav-menu .nav-item a {
         width: 100%;
         padding: 15px 0;
-        border-bottom: 1px solid var(--text-content-color);
     }
 
     main {

@@ -18,7 +18,7 @@ section.about section.title p:nth-child(1) {
 
 section.about section.title p:nth-child(2) {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 36px;
 }
 
 section.about section.image img {
